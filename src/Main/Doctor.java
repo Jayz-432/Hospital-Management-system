@@ -130,19 +130,18 @@ public class Doctor extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void dUserFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dUserFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dUserFieldActionPerformed
+    private void dUserFieldActionPerformed(java.awt.event.ActionEvent evt) {
+    }
 
-    private void dExitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dExitBtnActionPerformed
+    private void dExitBtnActionPerformed(java.awt.event.ActionEvent evt) {
         Hospital hospital = new Hospital();
         hospital.setVisible(true);
         dispose();
-    }//GEN-LAST:event_dExitBtnActionPerformed
+    }
 
-    private void dLoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dLoginBtnActionPerformed
+    private void dLoginBtnActionPerformed(java.awt.event.ActionEvent evt) {
         connection = Connector.ConnectDb();
         String user = dUserField.getText();
         String pass = String.valueOf(dPassField.getPassword());
@@ -166,14 +165,13 @@ public class Doctor extends javax.swing.JFrame {
         } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null, "User or Password wrong.");
         }
-    }//GEN-LAST:event_dLoginBtnActionPerformed
+    }
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
             new Doctor().setVisible(true);
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel aUserLabel;
     private javax.swing.JButton dExitBtn;
     private javax.swing.JButton dLoginBtn;
@@ -182,5 +180,4 @@ public class Doctor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private java.awt.Label mLabel;
-    // End of variables declaration//GEN-END:variables
 }
